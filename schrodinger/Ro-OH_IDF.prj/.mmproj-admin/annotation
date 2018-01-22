@@ -1,0 +1,58 @@
+--- This project was created on Mon Feb 15 10:47:21 2016
+
+-----
+Thu Feb 18 14:48:04 2016
+Starting Find Family
+Run: run1
+Job name: prime_pfam_run1_preparation
+Job ID: ares-0-56c5cb94
+Host: localhost
+-----
+Thu Feb 18 14:48:51 2016
+Starting Build Structure
+Run: run1
+Job name: prime_bldstruct_run1_preparation
+Job ID: ares-0-56c5cbc3
+Host: localhost
+-----
+Thu Feb 18 14:54:39 2016
+Starting Build Structure
+Run: rrm1 for dimer
+Job name: prime_bldstruct_rrm1_for_dimer_preparation
+Job ID: ares-0-56c5cd1f
+Host: localhost
+-----
+Thu Feb 18 14:56:06 2016
+Starting Build Structure
+Run: rrm1 for dimer
+Job name: prime_bldstruct_rrm1_for_dimer_preparation
+Job ID: ares-0-56c5cd73
+Host: localhost
+-----
+Fri Feb 19 09:28:04 2016
+Starting Induced Fit Docking
+Job name: InducedFit_rrm1_gossypol
+Job ID: ares-0-56c6d214
+Host:bob
+-----
+Fri Feb 19 09:33:48 2016
+Starting Induced Fit Docking
+Job name: InducedFit_rrm1_fattyacids
+Job ID: ares-0-56c6d36c
+Host:bob
+-----
+Wed Oct 25 12:24:10 2017
+Starting Induced Fit Docking
+Job name: InducedFit_RO-OH_102518_hal
+Job ID: lski1985-0-59f0baaa
+Host:batch-cpu
+-----
+Wed Oct 25 12:25:21 2017
+Starting Induced Fit Docking
+Job name: InducedFit_RO-OH_102518_hal
+Job ID: lski1985-0-59f0baf0
+Host:batch-cpu
+-----
+Wed Dec  6 12:40:42 2017
+Imported file:
+/Users/albaness/Documents/Schrodinger/InducedFit_Ro6/InducedFit_Ro6-out.maegz

@@ -1,0 +1,6 @@
+
+Glide is executing the glide_sort command.
+Command-line equivalent is:
+ "/opt/schrodinger/suites2017-3/utilities/glide_sort" -n 0 -o "InducedFit_RO-OH_102518_hal_rec-1_pv-5_pv.maegz"    -hbond_cut 0.00 -cvdw_cut 0.00 -metal_cut 10.00 -gscore_cut 100.00 "InducedFit_RO-OH_102518_hal_rec-1_pv-5_raw.maegz"
+
+glide_sort command succeeded.  Pose file InducedFit_RO-OH_102518_hal_rec-1_pv-5_pv.maegz was written.

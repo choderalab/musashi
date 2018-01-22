@@ -1,0 +1,1 @@
+"${SCHRODINGER}/ifd" -NGLIDECPU 1 -NPRIMECPU 1 InducedFit_RO-OH_102518_lilac.inp -HOST localhost -SUBHOST lsf-cpu -OPLSDIR "/Users/albaness/.schrodinger/opls_dir" -STRICT -TMPLAUNCHDIR -ATTACHED

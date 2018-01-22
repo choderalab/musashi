@@ -1,0 +1,1 @@
+"${SCHRODINGER}/ifd" -NGLIDECPU 1 -NPRIMECPU 1 InducedFit_Ro6.inp -HOST lsf-cpu -SUBHOST lsf-cpu -OPLSDIR "./opls_dir" -TMPLAUNCHDIR -ATTACHED

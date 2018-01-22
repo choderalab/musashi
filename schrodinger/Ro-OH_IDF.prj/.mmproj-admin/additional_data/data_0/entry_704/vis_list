@@ -1,0 +1,81 @@
+{ 
+ s_m_m2io_version
+ :::
+ 2.0.0 
+} 
+
+f_m_vis_list { 
+ r_m_t00
+ r_m_t01
+ r_m_t02
+ r_m_t10
+ r_m_t11
+ r_m_t12
+ r_m_t20
+ r_m_t21
+ r_m_t22
+ r_m_t30
+ r_m_t31
+ r_m_t32
+ :::
+ 1
+  0
+  0
+  0
+  1
+  0
+  0
+  0
+  1
+  0
+  0
+  0
+ m_volume[5] { 
+  i_m_id
+  s_m_name
+  r_m_t00
+  r_m_t01
+  r_m_t02
+  r_m_t10
+  r_m_t11
+  r_m_t12
+  r_m_t20
+  r_m_t21
+  r_m_t22
+  r_m_t30
+  r_m_t31
+  r_m_t32
+  :::
+  1 5 hbacceptor  1 0 0 0 1 0 0 0 1 0 0 0
+  2 4 hbdonor  1 0 0 0 1 0 0 0 1 0 0 0
+  3 3 hydrophil  1 0 0 0 1 0 0 0 1 0 0 0
+  4 2 hydrophob  1 0 0 0 1 0 0 0 1 0 0 0
+  5 1 surf  1 0 0 0 1 0 0 0 1 0 0 0
+  :::
+ } 
+ m_surface[5] { 
+  i_m_id
+  s_m_name
+  s_m_volume_name
+  r_m_t00
+  r_m_t01
+  r_m_t02
+  r_m_t10
+  r_m_t11
+  r_m_t12
+  r_m_t20
+  r_m_t21
+  r_m_t22
+  r_m_t30
+  r_m_t31
+  r_m_t32
+  :::
+  1 5 hbacceptor_accptr  hbacceptor  1 0 0 0 1 0 0 0 1 0 0 0
+  2 4 hbdonor_donor  hbdonor  1 0 0 0 1 0 0 0 1 0 0 0
+  3 3 hydrophil_phil  hydrophil  1 0 0 0 1 0 0 0 1 0 0 0
+  4 2 hydrophob_phob  hydrophob  1 0 0 0 1 0 0 0 1 0 0 0
+  5 1 surf_surf  surf  1 0 0 0 1 0 0 0 1 0 0 0
+  :::
+ } 
+} 
+

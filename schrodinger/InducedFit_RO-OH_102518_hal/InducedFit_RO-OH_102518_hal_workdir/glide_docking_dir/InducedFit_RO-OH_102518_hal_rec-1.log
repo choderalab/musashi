@@ -1,0 +1,125 @@
+Removing previous job files...
+Glide version 76016 (mmshare version 39016)
+Copyright (c) Schrodinger, LLC.
+All Rights Reserved.
+
+--------------------------------------------------------------------------------
+JobId          : lski1985-0-59f0baf0
+Name           : InducedFit_RO-OH_102518_hal
+Program        : IFD
+MMshareExec    : /opt/schrodinger/suites2017-3/mmshare-v3.9/bin/Darwin-x86_64
+Host           : lski1985.mskcc.org
+Dir            : /Users/albaness/Documents/Schrodinger/InducedFit_RO-OH_102518_hal
+HostEntry      : localhost
+JobHost        : lski1985.mskcc.org
+JobDir         : /Users/albaness/Documents/Schrodinger/InducedFit_RO-OH_102518_hal
+JobMMshareExec : /opt/schrodinger/suites2017-3/mmshare-v3.9/bin/Darwin-x86_64
+Commandline    : /opt/schrodinger/suites2017-3/ifd -NGLIDECPU 1 -NPRIMECPU 1 InducedFit_RO-OH_102518_hal.inp -HOST localhost -SUBHOST batch-cpu -OPLSDIR /Users/albaness/.schrodinger/opls_dir -STRICT -PROJ /Users/albaness/Documents/Schrodinger/Ro-OH_IDF.prj -DISP ignore -VIEWNAME ifd_gui.IFDPanel -TMPLAUNCHDIR -ATTACHED
+StartTime      : 2017-10-25-12:25:20
+--------------------------------------------------------------------------------
+
+Calling OPLS3 atomtyping ...
+Glide: WARNING scrypt_reader_new(): Using file outside of mmshare data --
+Glide: WARNING scrypt_reader_new(): /Users/albaness/.schrodinger/opls_dir/f16/f16_utt.dat
+Finished parameter assignment
+ VdW radii of protein atoms scaled by   0.500000000000000     
+ Charge cutoff for polarity  0.250000000000000     
+  Receptor setup: (nsites, nx, ny, nz, bsize)=(         125 ,           23 , 
+          23 ,           23 ,    1.00000000000000      ).
+ Screening setup finished.
+ DOCKMAIN: getting receptor.
+  DOCKMAIN after grid: (nx, ny, nz) = (          64 ,           64 , 
+          64 ).
+Creating output grid archive 'InducedFit_RO-OH_102518_hal_rec-1-gridgen.zip'
+
+Exiting Glide
+Date: Wednesday, October 25 2017, at 12:25:41 EDT
+CPU time (s): 10.3 user, 0.5 system, 11.1 real
+Total elapsed time = 11 seconds
+Removing previous job files...
+Glide version 76016 (mmshare version 39016)
+Copyright (c) Schrodinger, LLC.
+All Rights Reserved.
+
+--------------------------------------------------------------------------------
+JobId          : lski1985-0-59f0baf0
+Name           : InducedFit_RO-OH_102518_hal
+Program        : IFD
+MMshareExec    : /opt/schrodinger/suites2017-3/mmshare-v3.9/bin/Darwin-x86_64
+Host           : lski1985.mskcc.org
+Dir            : /Users/albaness/Documents/Schrodinger/InducedFit_RO-OH_102518_hal
+HostEntry      : localhost
+JobHost        : lski1985.mskcc.org
+JobDir         : /Users/albaness/Documents/Schrodinger/InducedFit_RO-OH_102518_hal
+JobMMshareExec : /opt/schrodinger/suites2017-3/mmshare-v3.9/bin/Darwin-x86_64
+Commandline    : /opt/schrodinger/suites2017-3/ifd -NGLIDECPU 1 -NPRIMECPU 1 InducedFit_RO-OH_102518_hal.inp -HOST localhost -SUBHOST batch-cpu -OPLSDIR /Users/albaness/.schrodinger/opls_dir -STRICT -PROJ /Users/albaness/Documents/Schrodinger/Ro-OH_IDF.prj -DISP ignore -VIEWNAME ifd_gui.IFDPanel -TMPLAUNCHDIR -ATTACHED
+StartTime      : 2017-10-25-12:25:20
+--------------------------------------------------------------------------------
+
+ VdW radii of ligand atoms scaled by   0.500000000000000     
+ Charge cutoff for polarity   0.150000000000000     
+ After readscreen, (nx, ny, nz) = (          23 ,           23 ,           23 ).
+  Receptor setup: (nsites, nx, ny, nz, bsize)=(         125 ,           23 , 
+          23 ,           23 ,    1.00000000000000      ).
+ Screening setup finished.
+ DOCKMAIN: getting receptor.
+  DOCKMAIN after grid: (nx, ny, nz) = (          64 ,           64 , 
+          64 ).
+ DOCKMAIN: Grid setup finished
+Calling OPLS3 atomtyping ...
+Glide: WARNING scrypt_reader_new(): Using file outside of mmshare data --
+Glide: WARNING scrypt_reader_new(): /Users/albaness/.schrodinger/opls_dir/f16/f16_utt.dat
+Finished parameter assignment
+  
+  Penalizing non-planar amide torsions 
+  
+ Number of rotatable bonds            2
+ Using templates for ring conformations.
+
+GlideScore version SP5.0 will be used
+
+  
+ Buried polar penalty      0.000
+ Coulomb vdW cutoff      100.000
+ H bond cutoff             0.000
+ Metal-ligand cutoff      10.000
+Assigning GlideScore SP5.0 parameters
+Postdocking minimization:  20 poses; CvdW cutoffs   200.0 kcal/mol for min,   100.0 kcal/mol for report.
+GlideScore(   -5.04)+Epik State Penalty(    0.02) =    -5.02 kcal/mol
+GlideScore(   -5.59)+Epik State Penalty(    0.02) =    -5.57 kcal/mol
+GlideScore(   -5.21)+Epik State Penalty(    0.02) =    -5.20 kcal/mol
+GlideScore(   -5.18)+Epik State Penalty(    0.02) =    -5.17 kcal/mol
+GlideScore(   -4.20)+Epik State Penalty(    0.02) =    -4.19 kcal/mol
+GlideScore(   -4.59)+Epik State Penalty(    0.02) =    -4.58 kcal/mol
+GlideScore(   -3.56)+Epik State Penalty(    0.02) =    -3.55 kcal/mol
+GlideScore(   -3.53)+Epik State Penalty(    0.02) =    -3.52 kcal/mol
+GlideScore(   -5.08)+Epik State Penalty(    0.02) =    -5.07 kcal/mol
+GlideScore(   -3.61)+Epik State Penalty(    0.02) =    -3.59 kcal/mol
+GlideScore(   -4.53)+Epik State Penalty(    0.02) =    -4.51 kcal/mol
+GlideScore(   -4.90)+Epik State Penalty(    0.02) =    -4.88 kcal/mol
+GlideScore(   -3.91)+Epik State Penalty(    0.02) =    -3.90 kcal/mol
+GlideScore(   -3.59)+Epik State Penalty(    0.02) =    -3.58 kcal/mol
+GlideScore(   -3.70)+Epik State Penalty(    0.02) =    -3.69 kcal/mol
+GlideScore(   -3.49)+Epik State Penalty(    0.02) =    -3.48 kcal/mol
+GlideScore(   -4.12)+Epik State Penalty(    0.02) =    -4.10 kcal/mol
+GlideScore(   -3.44)+Epik State Penalty(    0.02) =    -3.42 kcal/mol
+GlideScore(   -3.58)+Epik State Penalty(    0.02) =    -3.56 kcal/mol
+GlideScore(10000.00)+Epik State Penalty(    0.02) = 10000.02 kcal/mol
+DOCKING RESULTS FOR LIGAND        1 (Ro-OH_prepared)
+Best Emodel=   -34.49 E=   -26.78 Eint=     0.50 GlideScore=    -5.04
+REPORT OF BEST 19 POSES
+
+The receptor and sorted ligand structures were written to the file
+InducedFit_RO-OH_102518_hal_rec-1_pv.maegz  for use in the Pose Viewer.
+
+Final rankings based on original docking score
+1 poses were rejected by the energy filters,
+    Coul+vdw Energy <=   100.0    Hbond Interaction <=     0.0    Metal Interaction <=    10.0    GlideScore <=   100.0
+(If any of the above properties is not defined for a given pose,
+the corresponding filter is not applied to that pose.)
+
+
+Exiting Glide
+Date: Wednesday, October 25 2017, at 12:25:51 EDT
+CPU time (s): 5.2 user, 0.5 system, 6.2 real
+Total elapsed time = 6 seconds

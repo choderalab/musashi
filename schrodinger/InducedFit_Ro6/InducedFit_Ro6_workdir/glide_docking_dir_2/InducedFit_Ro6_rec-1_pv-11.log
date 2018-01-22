@@ -1,0 +1,104 @@
+Removing previous job files...
+Glide version 77011 (mmshare version 40011)
+Copyright (c) Schrodinger, LLC.
+All Rights Reserved.
+
+--------------------------------------------------------------------------------
+JobId          : lilac-0-5a218aaa
+Name           : InducedFit_Ro6
+Program        : IFD
+MMshareExec    : /data/chodera/schrodinger/schrodinger2017-4-advanced/mmshare-v4.0/bin/Linux-x86_64
+Host           : lilac.hpc.private
+Dir            : /lila/home/albaness/InducedFit_Ro6
+HostEntry      : lsf-cpu
+Queue          : LSF
+JobHost        : lt05.hpc.private
+JobDir         : /lila/home/albaness/InducedFit_Ro6
+JobMMshareExec : /data/chodera/schrodinger/schrodinger2017-4-advanced/mmshare-v4.0/bin/Linux-x86_64
+Commandline    : /data/chodera/schrodinger/schrodinger2017-4-advanced/ifd -NGLIDECPU 1 -NPRIMECPU 1 InducedFit_Ro6.inp -HOST lsf-cpu -SUBHOST lsf-cpu -OPLSDIR ./opls_dir -TMPLAUNCHDIR -ATTACHED
+StartTime      : 2017-12-01-12:00:37
+--------------------------------------------------------------------------------
+
+Calling OPLS3 atomtyping ...
+Finished parameter assignment
+ VdW radii of protein atoms scaled by    1.00000000000000     
+ Charge cutoff for polarity  0.250000000000000     
+  Receptor setup: (nsites, nx, ny, nz, bsize)=(         125 ,           25 , 
+          25 ,           25 ,    1.00000000000000      ).
+ Screening setup finished.
+ DOCKMAIN: getting receptor.
+  DOCKMAIN after grid: (nx, ny, nz) = (          64 ,           64 , 
+          64 ).
+Creating output grid archive 'InducedFit_Ro6_rec-1_pv-11-gridgen.zip'
+
+Exiting Glide
+Date: Friday, December 01 2017, at 12:57:33 EST
+CPU time (s): 17.5 user, 1.0 system, 19.0 real
+Total elapsed time = 19 seconds
+Removing previous job files...
+Glide version 77011 (mmshare version 40011)
+Copyright (c) Schrodinger, LLC.
+All Rights Reserved.
+
+--------------------------------------------------------------------------------
+JobId          : lilac-0-5a218aaa
+Name           : InducedFit_Ro6
+Program        : IFD
+MMshareExec    : /data/chodera/schrodinger/schrodinger2017-4-advanced/mmshare-v4.0/bin/Linux-x86_64
+Host           : lilac.hpc.private
+Dir            : /lila/home/albaness/InducedFit_Ro6
+HostEntry      : lsf-cpu
+Queue          : LSF
+JobHost        : lt05.hpc.private
+JobDir         : /lila/home/albaness/InducedFit_Ro6
+JobMMshareExec : /data/chodera/schrodinger/schrodinger2017-4-advanced/mmshare-v4.0/bin/Linux-x86_64
+Commandline    : /data/chodera/schrodinger/schrodinger2017-4-advanced/ifd -NGLIDECPU 1 -NPRIMECPU 1 InducedFit_Ro6.inp -HOST lsf-cpu -SUBHOST lsf-cpu -OPLSDIR ./opls_dir -TMPLAUNCHDIR -ATTACHED
+StartTime      : 2017-12-01-12:00:37
+--------------------------------------------------------------------------------
+
+ VdW radii of ligand atoms scaled by   0.800000000000000     
+ Charge cutoff for polarity   0.150000000000000     
+ After readscreen, (nx, ny, nz) = (          25 ,           25 ,           25 ).
+  Receptor setup: (nsites, nx, ny, nz, bsize)=(         125 ,           25 , 
+          25 ,           25 ,    1.00000000000000      ).
+ Screening setup finished.
+ DOCKMAIN: getting receptor.
+  DOCKMAIN after grid: (nx, ny, nz) = (          64 ,           64 , 
+          64 ).
+ DOCKMAIN: Grid setup finished
+Calling OPLS3 atomtyping ...
+Finished parameter assignment
+  
+  Penalizing non-planar amide torsions 
+  
+ Number of rotatable bonds            2
+ Using templates for ring conformations.
+
+GlideScore version SP5.0 will be used
+
+  
+ Buried polar penalty      0.000
+ Coulomb vdW cutoff        0.000
+ H bond cutoff             0.000
+ Metal-ligand cutoff      10.000
+Assigning GlideScore SP5.0 parameters
+Postdocking minimization:   5 poses; CvdW cutoffs   100.0 kcal/mol for min,     0.0 kcal/mol for report.
+GlideScore(   -5.48)+Epik State Penalty(    0.00) =    -5.48 kcal/mol
+DOCKING RESULTS FOR LIGAND        1 (RoA-6)
+Best Emodel=   -46.05 E=   -35.09 Eint=     0.95 GlideScore=    -5.48
+REPORT OF BEST 1 POSES
+
+The receptor and sorted ligand structures were written to the file
+InducedFit_Ro6_rec-1_pv-11_pv.maegz  for use in the Pose Viewer.
+
+Final rankings based on original docking score
+0 poses were rejected by the energy filters,
+    Coul+vdw Energy <=     0.0    Hbond Interaction <=     0.0    Metal Interaction <=    10.0    GlideScore <=   100.0
+(If any of the above properties is not defined for a given pose,
+the corresponding filter is not applied to that pose.)
+
+
+Exiting Glide
+Date: Friday, December 01 2017, at 12:57:54 EST
+CPU time (s): 7.5 user, 0.3 system, 9.1 real
+Total elapsed time = 9 seconds

@@ -1,0 +1,106 @@
+Removing previous job files...
+Glide version 76016 (mmshare version 39016)
+Copyright (c) Schrodinger, LLC.
+All Rights Reserved.
+
+--------------------------------------------------------------------------------
+JobId          : lski1985-0-59f0baf0
+Name           : InducedFit_RO-OH_102518_hal
+Program        : IFD
+MMshareExec    : /opt/schrodinger/suites2017-3/mmshare-v3.9/bin/Darwin-x86_64
+Host           : lski1985.mskcc.org
+Dir            : /Users/albaness/Documents/Schrodinger/InducedFit_RO-OH_102518_hal
+HostEntry      : localhost
+JobHost        : lski1985.mskcc.org
+JobDir         : /Users/albaness/Documents/Schrodinger/InducedFit_RO-OH_102518_hal
+JobMMshareExec : /opt/schrodinger/suites2017-3/mmshare-v3.9/bin/Darwin-x86_64
+Commandline    : /opt/schrodinger/suites2017-3/ifd -NGLIDECPU 1 -NPRIMECPU 1 InducedFit_RO-OH_102518_hal.inp -HOST localhost -SUBHOST batch-cpu -OPLSDIR /Users/albaness/.schrodinger/opls_dir -STRICT -PROJ /Users/albaness/Documents/Schrodinger/Ro-OH_IDF.prj -DISP ignore -VIEWNAME ifd_gui.IFDPanel -TMPLAUNCHDIR -ATTACHED
+StartTime      : 2017-10-25-12:25:20
+--------------------------------------------------------------------------------
+
+Calling OPLS3 atomtyping ...
+Glide: WARNING scrypt_reader_new(): Using file outside of mmshare data --
+Glide: WARNING scrypt_reader_new(): /Users/albaness/.schrodinger/opls_dir/f16/f16_utt.dat
+Finished parameter assignment
+ VdW radii of protein atoms scaled by    1.00000000000000     
+ Charge cutoff for polarity  0.250000000000000     
+  Receptor setup: (nsites, nx, ny, nz, bsize)=(         125 ,           23 , 
+          23 ,           23 ,    1.00000000000000      ).
+ Screening setup finished.
+ DOCKMAIN: getting receptor.
+  DOCKMAIN after grid: (nx, ny, nz) = (          64 ,           64 , 
+          64 ).
+Creating output grid archive 'InducedFit_RO-OH_102518_hal_rec-1_pv-1-gridgen.zip'
+
+Exiting Glide
+Date: Wednesday, October 25 2017, at 12:49:10 EDT
+CPU time (s): 9.8 user, 0.5 system, 10.7 real
+Total elapsed time = 11 seconds
+Removing previous job files...
+Glide version 76016 (mmshare version 39016)
+Copyright (c) Schrodinger, LLC.
+All Rights Reserved.
+
+--------------------------------------------------------------------------------
+JobId          : lski1985-0-59f0baf0
+Name           : InducedFit_RO-OH_102518_hal
+Program        : IFD
+MMshareExec    : /opt/schrodinger/suites2017-3/mmshare-v3.9/bin/Darwin-x86_64
+Host           : lski1985.mskcc.org
+Dir            : /Users/albaness/Documents/Schrodinger/InducedFit_RO-OH_102518_hal
+HostEntry      : localhost
+JobHost        : lski1985.mskcc.org
+JobDir         : /Users/albaness/Documents/Schrodinger/InducedFit_RO-OH_102518_hal
+JobMMshareExec : /opt/schrodinger/suites2017-3/mmshare-v3.9/bin/Darwin-x86_64
+Commandline    : /opt/schrodinger/suites2017-3/ifd -NGLIDECPU 1 -NPRIMECPU 1 InducedFit_RO-OH_102518_hal.inp -HOST localhost -SUBHOST batch-cpu -OPLSDIR /Users/albaness/.schrodinger/opls_dir -STRICT -PROJ /Users/albaness/Documents/Schrodinger/Ro-OH_IDF.prj -DISP ignore -VIEWNAME ifd_gui.IFDPanel -TMPLAUNCHDIR -ATTACHED
+StartTime      : 2017-10-25-12:25:20
+--------------------------------------------------------------------------------
+
+ VdW radii of ligand atoms scaled by   0.800000000000000     
+ Charge cutoff for polarity   0.150000000000000     
+ After readscreen, (nx, ny, nz) = (          23 ,           23 ,           23 ).
+  Receptor setup: (nsites, nx, ny, nz, bsize)=(         125 ,           23 , 
+          23 ,           23 ,    1.00000000000000      ).
+ Screening setup finished.
+ DOCKMAIN: getting receptor.
+  DOCKMAIN after grid: (nx, ny, nz) = (          64 ,           64 , 
+          64 ).
+ DOCKMAIN: Grid setup finished
+Calling OPLS3 atomtyping ...
+Glide: WARNING scrypt_reader_new(): Using file outside of mmshare data --
+Glide: WARNING scrypt_reader_new(): /Users/albaness/.schrodinger/opls_dir/f16/f16_utt.dat
+Finished parameter assignment
+  
+  Penalizing non-planar amide torsions 
+  
+ Number of rotatable bonds            2
+ Using templates for ring conformations.
+
+GlideScore version SP5.0 will be used
+
+  
+ Buried polar penalty      0.000
+ Coulomb vdW cutoff        0.000
+ H bond cutoff             0.000
+ Metal-ligand cutoff      10.000
+Assigning GlideScore SP5.0 parameters
+Postdocking minimization:   5 poses; CvdW cutoffs   100.0 kcal/mol for min,     0.0 kcal/mol for report.
+GlideScore(   -4.88)+Epik State Penalty(    0.02) =    -4.87 kcal/mol
+DOCKING RESULTS FOR LIGAND        1 (Ro-OH_prepared)
+Best Emodel=   -36.63 E=   -27.96 Eint=     0.42 GlideScore=    -4.88
+REPORT OF BEST 1 POSES
+
+The receptor and sorted ligand structures were written to the file
+InducedFit_RO-OH_102518_hal_rec-1_pv-1_pv.maegz  for use in the Pose Viewer.
+
+Final rankings based on original docking score
+0 poses were rejected by the energy filters,
+    Coul+vdw Energy <=     0.0    Hbond Interaction <=     0.0    Metal Interaction <=    10.0    GlideScore <=   100.0
+(If any of the above properties is not defined for a given pose,
+the corresponding filter is not applied to that pose.)
+
+
+Exiting Glide
+Date: Wednesday, October 25 2017, at 12:49:22 EDT
+CPU time (s): 5.8 user, 0.5 system, 7.6 real
+Total elapsed time = 8 seconds

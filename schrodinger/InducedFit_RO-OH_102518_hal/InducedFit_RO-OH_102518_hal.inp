@@ -1,0 +1,84 @@
+
+#  Multiple input structures can be specified by adding additional
+#  INPUT_FILE lines or including multiple structures in a single
+#  file.
+#
+#  If beginning with an existing Pose Viewer file, simply specify
+#  it as the INPUT_FILE (making sure the name ends in "_pv.mae"
+#  or "_pv.maegz") and ensure that the first GLIDE_DOCKING stage
+#  is commented out.  The ligand used in producing the Pose Viewer
+#  file must also be provided to the second GLIDE_DOCKING stage,
+#  using the LIGAND_FILE keyword.
+
+INPUT_FILE	InducedFit_RO-OH_102518_hal_rec.mae
+
+# Prime Loop Prediction
+#  Perform a loop prediction on the specified loop, including
+#  side chains within the given distance.  Only return
+#  structures within the specified energy range from the
+#  lowest energy prediction, up to the maximum number of
+#  conformations given.
+#
+#  Note: This stage is disabled by default.  Uncomment the
+#   lines below and edit the fields appropriately to enable it.
+#STAGE PRIME_LOOP
+#  START_RESIDUE A:11
+#  END_RESIDUE A:16
+#  RES_SPHERE 7.5
+#  MAX_ENERGY_GAP 30.0
+#  MAX_STRUCTURES 5
+#  USE_MEMBRANE no
+
+STAGE GLIDE_DOCKING2
+  BINDING_SITE ligand _:900
+  INNERBOX 10.0
+  OUTERBOX auto
+  LIGAND_FILE  InducedFit_RO-OH_102518_hal.maegz
+  LIGANDS_TO_DOCK all
+  GRIDGEN_RECEP_CCUT  0.25
+  GRIDGEN_RECEP_VSCALE 0.50
+  DOCKING_PRECISION SP
+  DOCKING_LIG_CCUT  0.15
+  DOCKING_CV_CUTOFF  100.0
+  DOCKING_LIG_VSCALE 0.50
+  DOCKING_POSES_PER_LIG 20
+  DOCKING_RINGCONFCUT 2.5
+  DOCKING_AMIDE_MODE penal
+
+STAGE COMPILE_RESIDUE_LIST
+  DISTANCE_CUTOFF	5.0
+
+STAGE PRIME_REFINEMENT
+  NUMBER_OF_PASSES	1
+  USE_MEMBRANE no
+  OPLS_VERSION OPLS3
+
+STAGE SORT_AND_FILTER
+  POSE_FILTER	r_psp_Prime_Energy
+  POSE_KEEP	30.0
+
+STAGE SORT_AND_FILTER
+  POSE_FILTER	r_psp_Prime_Energy
+  POSE_KEEP	20#
+
+STAGE GLIDE_DOCKING2
+  BINDING_SITE ligand Z:999
+  INNERBOX 10.0
+  OUTERBOX auto
+  LIGAND_FILE  InducedFit_RO-OH_102518_hal.maegz
+  LIGANDS_TO_DOCK self
+  GRIDGEN_RECEP_CCUT  0.25
+  GRIDGEN_RECEP_VSCALE 1.00
+  DOCKING_PRECISION SP
+  DOCKING_LIG_CCUT  0.15
+  DOCKING_CV_CUTOFF  0.0
+  DOCKING_LIG_VSCALE 0.80
+  DOCKING_POSES_PER_LIG 1
+  DOCKING_RINGCONFCUT 2.5
+  DOCKING_AMIDE_MODE penal
+
+STAGE SCORING
+  SCORE_NAME  r_psp_IFDScore
+  TERM 1.0,r_i_glide_gscore,0
+  TERM 0.05,r_psp_Prime_Energy,1
+  REPORT_FILE report.csv

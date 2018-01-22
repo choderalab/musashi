@@ -1,0 +1,1 @@
+"${SCHRODINGER}/ifd" -NGLIDECPU 1 -NPRIMECPU 1 InducedFit_RO-OH_102517.inp -HOST localhost -SUBHOST batch-cpu -OPLSDIR "/Users/albaness/.schrodinger/opls_dir" -STRICT -TMPLAUNCHDIR -ATTACHED

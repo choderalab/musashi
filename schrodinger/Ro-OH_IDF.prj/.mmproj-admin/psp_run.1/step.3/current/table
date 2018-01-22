@@ -1,0 +1,47 @@
+{ 
+ s_m_m2io_version
+ :::
+ 2.0.0 
+} 
+
+f_m_table { 
+ s_psp_ea_anchors
+ :::
+ 0 
+ m_column[7] { 
+  s_m_data_name
+  s_m_column_name
+  i_m_width
+  b_m_visible
+  s_m_print_format
+  b_m_editable
+  :::
+  1 s_psp_ea_templatename  Template  20 1 "%s"  0
+  2 r_psp_ea_score  Score  6 1 "%4.1f"  0
+  3 i_psp_ea_identity  Identities  10 1 "%3d%%"  0
+  4 i_psp_ea_positives  Positives  10 1 "%3d%%"  0
+  5 i_psp_ea_gaps  Gaps  6 1 "%3d%%"  0
+  6 s_psp_ea_pfam_identity  Pfam  20 1 "%s"  0
+  7 b_m_selected  selected  10 0 ""  0
+  :::
+ } 
+ m_row[1] { 
+  s_psp_ea_templatename
+  r_psp_ea_score
+  i_psp_ea_identity
+  i_psp_ea_positives
+  i_psp_ea_gaps
+  s_psp_ea_pfam_identity
+  b_m_selected
+  :::
+  1 xxxx-impref_A   0.0   41%   63%    0%  5/6  1
+  :::
+ } 
+ m_exists[1] { 
+  s_m_exists
+  :::
+  1 1111111 
+  :::
+ } 
+} 
+

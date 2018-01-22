@@ -1,0 +1,108 @@
+==============================================================================
+  Prime version 4.2 (r000) Build Structure
+==============================================================================
+
+--------------------------------------------------------------------------------
+JobId          : ares-0-56c5cd73
+Name           : prime_bldstruct_rrm1_for_dimer_preparation
+Program        : BuildStructure
+MMshareExec    : /nfs/apollo/opt/schrodinger2015-4/mmshare-v32017/bin/Linux-x86_64
+Host           : ares.schrodinger.com
+Dir            : /home/cappel/TriTDI/Musashi
+HostEntry      : localhost
+JobHost        : ares.schrodinger.com
+JobDir         : /scratch/cappel/prime_bldstruct_rrm1_for_dimer_preparation
+JobMMshareExec : /nfs/apollo/opt/schrodinger2015-4/mmshare-v32017/bin/Linux-x86_64
+Commandline    : /nfs/apollo/opt/schrodinger2015-4/prime -HOST localhost prime_bldstruct_rrm1_for_dimer_preparation prime_bldstruct_rrm2_on_chainA_preparation
+StartTime      : 2016-02-18-14:56:03
+--------------------------------------------------------------------------------
+
+Using the following input parameters:
+   JOB_TYPE MODEL
+   QUERY_OFFSET 0
+   TEMPLATE_NAME template1_B
+   template1_B_NUMBER 1
+   template1_B_STRUCT_FILE prime_bldstruct_rrm1_for_dimer_preparation-pdbtemplate1.ent
+   template1_B_ALIGN_FILE prime_bldstruct_rrm1_for_dimer_preparation-xxxx-impref-chainB_impref_chainB_B.align
+   DIR_NAME /home/cappel/TriTDI/Musashi/preparation.prj/.mmproj-admin/psp_run.2/step.4/current
+   TAILS 0
+   SIDE_OPT true
+   MINIMIZE true
+   BUILD_INSERTIONS false
+   MAX_INSERTION_SIZE 20
+   BUILD_TRANSITIONS true
+   BUILD_DELETIONS true
+   KEEP_ROTAMERS true
+   COMPOSITE_ARRAY 111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+   KNOWLEDGE_BASED true
+   NUM_OUTPUT_STRUCT 1
+   TEMPLATE_RESIDUE_NUMBERS false
+
+Configuring template template1_B
+
+Loading template template1_B
+
+
+Using the following input parameters:
+   JOB_TYPE MODEL
+   QUERY_OFFSET 0
+   TEMPLATE_NAME template1_A
+   template1_A_NUMBER 1
+   template1_A_STRUCT_FILE prime_bldstruct_rrm2_on_chainA_preparation-pdbtemplate1.ent
+   template1_A_ALIGN_FILE prime_bldstruct_rrm2_on_chainA_preparation-xxxx-impref_A.align
+   DIR_NAME /home/cappel/TriTDI/Musashi/preparation.prj/.mmproj-admin/psp_run.1/step.4/current
+   TAILS 0
+   SIDE_OPT true
+   MINIMIZE true
+   BUILD_INSERTIONS false
+   MAX_INSERTION_SIZE 20
+   BUILD_TRANSITIONS true
+   BUILD_DELETIONS true
+   KEEP_ROTAMERS true
+   COMPOSITE_ARRAY 11111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+   KNOWLEDGE_BASED true
+   NUM_OUTPUT_STRUCT 1
+   TEMPLATE_RESIDUE_NUMBERS false
+
+Configuring template template1_A
+
+Loading template template1_A
+
+
+
+
+Initial model constructed.
+
+Preprocessing using PrepWizard...
+
+Now start knowledge based building...
+Optimizing nonloop side chains with clashes: 16
+B:3: :ILE
+B:14: :VAL
+B:18: :LYS
+B:22: :GLU
+B:26: :LYS
+B:28: :GLU
+B:29: :ASP
+B:32: :LEU
+B:34: :PHE
+B:36: :LYS
+B:50: :GLU
+B:54: :VAL
+B:61: :ILE
+B:67: :ASN
+B:73: :CYS
+B:82: :MET
+Minimizing nonloop side chains with clashes: 1
+B:54: :VAL
+Homology model building job complete.
+
+Output structure is colored by residue
+Blue  --  Full residue conformation is copied from the template
+          Identical residues at this position in the alignment
+Cyan  --  Residue Backbone Conformation is copied from the template
+          Sidechain mutation at this position in the alignment
+Red   --  Residue backbone and sidechain positions have been modeled
+          An insertion, deletion or experimental constraint requires
+          this position in the alignment to be predicted
+
