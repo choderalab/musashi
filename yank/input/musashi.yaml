@@ -1,0 +1,82 @@
+options:
+   output_dir: .
+   minimize: yes
+   verbose: yes
+   number_of_iterations: 15000
+   temperature: 300*kelvin
+   pressure: 1*atmosphere
+   nsteps_per_iteration: 2500
+   timestep: 2.0*femtoseconds
+   processes_per_experiment: 5
+   checkpoint_interval: 100
+   resume_setup: yes
+   resume_simulation: yes
+
+molecules:
+    RoOHreceptor:
+      filepath: input/RoOHreceptor_pdbfixer.pdb
+      strip_protons: yes
+
+    RoOH:
+      filepath: input/RoOH.mol2
+      antechamber:
+        charge_method: null
+      openeye: 
+        quacpac: am1-bcc
+    
+    Roeight:
+      filepath: input/Roeight.mol2
+      antechamber:
+        charge_method: null
+      openeye:
+        quacpac: am1-bcc
+    
+    Roeightreceptor:
+      filepath: input/Roeightreceptor_pdbfixer.pdb 
+      strip_protons: yes
+
+solvents:
+  PME:
+    nonbonded_method: PME
+    nonbonded_cutoff: 0.9*nanometer
+    switch_distance: 0.8*nanometer
+    clearance: 12*angstroms
+    positive_ion: Na+
+    negative_ion: Cl-
+    solvent_model: tip3p
+
+systems:
+  Roeight:
+    receptor: Roeightreceptor
+    ligand: Roeight
+    solvent: PME
+    leap:
+      parameters: [leaprc.protein.ff14SB, leaprc.gaff, leaprc.water.tip3p]
+  RoOH:
+     receptor: RoOHreceptor
+     ligand: RoOH
+     solvent: PME
+     leap:
+       parameters: [leaprc.protein.ff14SB, leaprc.gaff, leaprc.water.tip3p]
+protocols:
+  absolute-binding:
+    complex:
+      alchemical_path: auto
+    solvent:
+      alchemical_path: auto
+
+experiment-flatbottom:
+  system: !Combinatorial [RoOH, Roeight]
+  protocol: absolute-binding
+  restraint:
+    type: FlatBottom
+
+experiment-harmonic:
+  system: !Combinatorial [RoOH, Roeight]
+  protocol: absolute-binding
+  restraint:
+    type: Harmonic
+    restrained_receptor_atoms: '(residue 76) or (residue 80) or (residue 2) or (residue 46) or (residue 4) or (residue 78)'
+
+experiments: [experiment-flatbottom, experiment-harmonic]
+
