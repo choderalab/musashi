@@ -3,7 +3,7 @@
 # Contents of this file will be overwritten when the #
 # project is closed.                                 #
 ######################################################
-prefer fitenhance=true fitenhancenear=6.92623 fitenhancefar=-6.92623
+prefer fitenhance=true fitenhancenear=16.1559 fitenhancefar=-16.1559
 ribbon display=ribbonsonly
 hbondcriteria display=true displayhbond=true displayhalogen=true displaysaltbridge=true displayaromatichbond=false distance=2.8 donorangle=120 acceptorangle=90 halogendistance=3.5 donorminimumangleasdonor=140 acceptorminimumangleasdonor=90 donorminimumangleasacceptor=120 acceptorminimumangleasacceptor=90 acceptormaximumangleasacceptor=170 saltbridgedistance=5 aromatichbonddistance_o=2.8 aromatichbonddistance_n=2.5 aromatichbonddonorminangle_o=90 aromatichbonddonorminangle_n=108 aromatichbonddonormaxangle_n=130 aromatichbondacceptorminangle=90
 displayhbondsmode  mode=ligandreceptor
@@ -17,5 +17,5 @@ displaypiinteractions display=true displaystacking=true displaycation=true
 displaypiinteractionsmode  mode=ligandreceptor
 piinteractionset2 (protein_near_ligand) or (water and within 5.0 ligand)
 piinteractionset1 (ligand) or (water and within 5.0 ligand)
-clip front=15.1669 back=-0.905479 frontsurface=27.4604 backsurface=-13.199 leftsurface=-21.0057 rightsurface=35.5143 leftslopesurface=0 rightslopesurface=0 frontselect=27.4604 backselect=-13.199 boxoffset=0 objects=all
+clip front=64.5693 back=-38.547 frontsurface=64.5693 backsurface=-38.547 leftsurface=-47.1938 rightsurface=55.9225 leftslopesurface=0 rightslopesurface=0 frontselect=64.5693 backselect=-38.547 boxoffset=0 objects=all
 prefer annotationsvisible=true interactionsvisible=false measurementsvisible=true ribbonsvisible=true surfacesvisible=true
