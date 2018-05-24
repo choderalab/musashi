@@ -82,8 +82,8 @@ def renumber(file_name, output_dir, accession_id):
         print('%s does not align to %s. Move to the next structure' % (file_name, accession_id))
         return None
     else:
-        alignment_start = alignments[0][3] + 1
-        alignment_end = alignments[0][4] + 1
+        alignment_start = alignments[0][3]
+        alignment_end = alignments[0][4]
 
     # Clean up FASTA files
     os.remove("%s.fasta" % file_name)
@@ -92,7 +92,7 @@ def renumber(file_name, output_dir, accession_id):
     # Create the list of new residue numbers from the alignment
     new_resnums = list(range(alignment_start, alignment_end+200))
     shifted_resnums = list(range(alignment_start+1000, alignment_end+2000))
-    
+
 
     # Check if the renumbering is necessary
     if cap:
