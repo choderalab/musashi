@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/118507352.svg)](https://zenodo.org/badge/latestdoi/118507352)
+
 # Musashi Modeling 
 
 This site archives the input files, scripts and figures for the following publication: 
